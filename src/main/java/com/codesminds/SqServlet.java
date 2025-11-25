@@ -25,12 +25,15 @@ public class SqServlet extends HttpServlet{
 		int square = k*k;
 		
 		PrintWriter out = res.getWriter();
+		out.println("<html><body bgcolor=\"cyan\">");
 		out.println("result is "+square);
 		
 		
 		ServletConfig cg = getServletConfig();
 		String str = cg.getInitParameter("name");
 		out.println("Hi "+str);
+		
+		out.println("</html><body/>");
 	}
 
 }
