@@ -12,7 +12,7 @@
 		<welcome-file>default.xhtml</welcome-file>
 	</welcome-file-list>
 	
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>abc</servlet-name>
 		<servlet-class>com.codesminds.AddServlet</servlet-class>
 	</servlet>
@@ -20,7 +20,7 @@
 	<servlet-mapping>
 		<servlet-name>abc</servlet-name>
 		<url-pattern>/add</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
 	<servlet>
 		<servlet-name>xyz</servlet-name>
