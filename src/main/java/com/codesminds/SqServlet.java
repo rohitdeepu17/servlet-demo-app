@@ -10,9 +10,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class SqServlet extends HttpServlet{
-	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		
-		int k = (int)req.getAttribute("k");
+		int k = Integer.parseInt(req.getParameter("k"));
 		
 		int square = k*k;
 		
