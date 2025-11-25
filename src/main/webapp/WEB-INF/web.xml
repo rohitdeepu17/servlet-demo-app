@@ -25,6 +25,12 @@
 	<servlet>
 		<servlet-name>xyz</servlet-name>
 		<servlet-class>com.codesminds.SqServlet</servlet-class>
+		
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Singla</param-value>
+		</init-param>
+		
 	</servlet>
 	
 	<servlet-mapping>

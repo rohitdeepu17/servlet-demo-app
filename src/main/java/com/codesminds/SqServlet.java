@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
@@ -27,8 +28,8 @@ public class SqServlet extends HttpServlet{
 		out.println("result is "+square);
 		
 		
-		ServletContext ctx = getServletContext();
-		String str = ctx.getInitParameter("name");
+		ServletConfig cg = getServletConfig();
+		String str = cg.getInitParameter("name");
 		out.println("Hi "+str);
 	}
 
