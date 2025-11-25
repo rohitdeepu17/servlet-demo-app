@@ -8,6 +8,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 public class AddServlet extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
@@ -16,7 +17,10 @@ public class AddServlet extends HttpServlet{
 		
 		int k = i+j;
 		
-		res.sendRedirect("sq?k="+k);     //URL Rewriting
+		HttpSession session = req.getSession();
+		session.setAttribute("k", k);
+		
+		res.sendRedirect("sq");     //URL Rewriting
 	}
 
 }
