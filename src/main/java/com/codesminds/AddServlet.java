@@ -23,7 +23,7 @@ public class AddServlet extends HttpServlet{
 		Cookie cookie = new Cookie("k", k + "");
 		res.addCookie(cookie);
 		
-		res.sendRedirect("sq");     //URL Rewriting
+		res.sendRedirect("sq.jsp");     //URL Rewriting
 	}
 
 }
